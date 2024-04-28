@@ -1,28 +1,21 @@
 body {
-    font-family: "Barlow Semi Condensed", Arial, sans-serif !important;
+    font-family: "Barlow Semi Condensed", Arial, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     color: rgb(189, 150, 150);
-    /* Remove height restriction */
-    /* height: 4000px; */
     width: 100%;
     margin: 0;
     padding: 0;
-    /* Remove unnecessary display properties */
-    /* display: flex;
-    justify-content: center;
-    align-items: start;
-    align-content: start; */
     background-color: hsl(0, 0%, 81%);
 }
 
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    overflow-y: scroll !important;
-    overflow-x: hidden !important;
+    overflow-y: scroll ;
+    overflow-x: hidden ;
 }
 
 *,
@@ -31,11 +24,8 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    color: white !important;
+    color: white ;
     overflow: hidden;
-        /* overflow-y: scroll !important;
-            overflow-x: hidden !important; */
-
 }
 
 a {
@@ -53,32 +43,25 @@ ul {
 }
 
 main {
-    /* background-color: rgb(61, 49, 49); */
     width: 100%;
-    /* height: 1080px; */
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    /* flex-wrap: wrap; */
     padding: 2rem 8rem;
-    /* overflow: scroll !important; */
-    /* flex-direction: column; */
 }
 
 .item {
     width: 250px;
-    /* Remove height property */
-    height: 100% !important;
+    height: 100% ;
     flex-grow: 1;
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column ;
     justify-content: start;
     align-items: start;
-    padding: .4rem 2rem 2rem 2rem !important;
+    padding: .4rem 2rem 2rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* border: .3px solid black; */
-    align-content: start !important;
+    align-content: start ;
     gap: 0;
 }
 
@@ -91,7 +74,6 @@ main {
     flex-direction: column;
     height: auto;
     width: 100%;
-    
 }
 
 .left {
@@ -102,10 +84,8 @@ main {
     flex-direction: column;
     width: 100%;
     height: auto;
-    /* overflow: scroll !important; */
     margin-right: 0rem;
 }
-
 
 .left-top {
     display: flex;
@@ -137,6 +117,7 @@ main {
 #Jonathan {
     background-color: hsl(217, 19%, 35%);
     flex-basis: 33%;
+    width: 100%;
 }
 
 #Jeanette {
@@ -153,20 +134,16 @@ main {
 #Kira {
     background-color: rgb(255, 255, 255);
     flex-basis: 100%;
-    height: 100%;
-    /* Remove height property */
     gap: 2rem;
-    /* box-sizing: initial !important;; */
-    /* padding-right:0rem !important; */
     width: 100%;
 }
 
 #Kira * {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) ;
 }
 
-#kira >h2{
-    color: red !important;
+#kira>h2 {
+    color: red ;
     text-wrap: nowrap;
 }
 
@@ -185,7 +162,7 @@ main {
 
 .pro {
     display: flex;
-    align-items: center !important;
+    align-items: center ;
     justify-content: start;
     width: 100%;
     padding-top: 1rem;
@@ -199,7 +176,7 @@ main {
 
 .name h3,
 #Kira h3 {
-    font-size: .8rem !important;
+    font-size: .8rem ;
     font-weight: 200;
     opacity: .5;
 }
@@ -211,28 +188,30 @@ img {
 
 h1,
 #Kira h1 {
-    font-size: 1rem !important;
+    font-size: 1rem ;
     margin: 0;
 }
 
 @media (max-width: 1420px) {
-    main{
+    main {
         flex-direction: column;
     }
-    #Kira{
-        width: 100% ;
-        height: 250px !important;
+
+    #Kira {
+        width: 100%;
+        height: 250px ;
     }
 }
 
 @media (max-width: 1080px) {
     main {
         flex-direction: column;
-        padding: 0rem !important;
+        padding: 0rem ;
     }
 
-    .left-top,.left-buttom {
-        flex-direction: column !important;
+    .left-top,
+    .left-buttom {
+        flex-direction: column ;
     }
 
     .item {
