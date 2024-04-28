@@ -1,0 +1,238 @@
+body {
+    font-family: "Barlow Semi Condensed", Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(189, 150, 150);
+    /* Remove height restriction */
+    /* height: 4000px; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* Remove unnecessary display properties */
+    /* display: flex;
+    justify-content: center;
+    align-items: start;
+    align-content: start; */
+    background-color: hsl(0, 0%, 81%);
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    color: white !important;
+    overflow: hidden;
+        /* overflow-y: scroll !important;
+            overflow-x: hidden !important; */
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    /* background-color: rgb(61, 49, 49); */
+    width: 100%;
+    /* height: 1080px; */
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+    padding: 2rem 8rem;
+    /* overflow: scroll !important; */
+    /* flex-direction: column; */
+}
+
+.item {
+    width: 250px;
+    /* Remove height property */
+    height: 100% !important;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+    padding: .4rem 2rem 2rem 2rem !important;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* border: .3px solid black; */
+    align-content: start !important;
+    gap: 0;
+}
+
+.right {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    
+}
+
+.left {
+    display: flex;
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    align-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    /* overflow: scroll !important; */
+    margin-right: 0rem;
+}
+
+
+.left-top {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: auto;
+    flex-basis: 50%;
+    padding-bottom: 1rem;
+    gap: 2rem;
+    height: auto;
+}
+
+.left-buttom {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: auto;
+    flex-basis: 50%;
+    gap: 2rem;
+    padding-top: 1rem;
+    height: auto;
+}
+
+#Daniel {
+    background-color: hsl(263, 55%, 52%);
+    flex-basis: 66%;
+}
+
+#Jonathan {
+    background-color: hsl(217, 19%, 35%);
+    flex-basis: 33%;
+}
+
+#Jeanette {
+    background-color: rgb(255, 0, 0);
+    flex-basis: 33%;
+    width: 100%;
+}
+
+#Patrick {
+    background-color: hsl(219, 29%, 14%);
+    flex-basis: 66%;
+}
+
+#Kira {
+    background-color: rgb(255, 255, 255);
+    flex-basis: 100%;
+    height: 100%;
+    /* Remove height property */
+    gap: 2rem;
+    /* box-sizing: initial !important;; */
+    /* padding-right:0rem !important; */
+    width: 100%;
+}
+
+#Kira * {
+    color: rgb(0, 0, 0) !important;
+}
+
+#kira >h2{
+    color: red !important;
+    text-wrap: nowrap;
+}
+
+.item p,
+#Kira p {
+    opacity: .7;
+    margin: 0;
+    font-size: .8rem;
+}
+
+.item h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pro {
+    display: flex;
+    align-items: center !important;
+    justify-content: start;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.name {
+    margin-left: 1rem;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+.name h3,
+#Kira h3 {
+    font-size: .8rem !important;
+    font-weight: 200;
+    opacity: .5;
+}
+
+img {
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+h1,
+#Kira h1 {
+    font-size: 1rem !important;
+    margin: 0;
+}
+
+@media (max-width: 1420px) {
+    main{
+        flex-direction: column;
+    }
+    #Kira{
+        width: 100% ;
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 1080px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-top,.left-buttom {
+        flex-direction: column !important;
+    }
+
+
+}
