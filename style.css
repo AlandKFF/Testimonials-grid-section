@@ -228,11 +228,14 @@ h1,
 @media (max-width: 1080px) {
     main {
         flex-direction: column;
+        padding: 0rem !important;
     }
 
     .left-top,.left-buttom {
         flex-direction: column !important;
     }
 
-
+    .item {
+        padding: auto;
+    }
 }
